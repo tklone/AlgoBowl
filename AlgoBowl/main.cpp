@@ -25,7 +25,6 @@ int main() {
     }
 
 
-//    vector <int> testVec;
     vector <int> leftSide;
     vector <int> rightSide;
 
@@ -38,10 +37,6 @@ int main() {
         inputData >> rightVal;
         rightSide.push_back(rightVal);
     }
-
-//    for (int i = 0; i < leftSide.size(); i++) {
-//        cout << leftSide.at(i) << " ";
-//    }
 
     for (int i = 0; i < leftSide.size(); i++) {
         if (leftSide.at(i) < 0) {
@@ -57,10 +52,8 @@ int main() {
     }
 
     int currentVal;
-    int currentVal1;
     while (!inputData.eof()) {
         inputData >> currentVal;
-//        testVec.push_back(currentVal);
         if (currentVal > 0) {
             valsArray[currentVal - 1] = valsArray[currentVal - 1] + 1;
         } else if (currentVal < 0) {
@@ -69,35 +62,26 @@ int main() {
         }
     }
 
-//    for (int i = 0; i < testVec.size(); i++) {
-//        cout << testVec.at(i) << " ";
-//        testVec.erase(testVec.begin());
-//    }
-
-//    for (int i = 0; i < n ; i++) {
-//        cout << valsArray[i] << " ";
-//    }
-
     //find max and min vals
     //This part is wrong
-    int minValue = 0;
-    int maxValue = 0;
-    int minValIndex;
-    int maxValIndex;
-    for (int i = 0; i < n - 1; i++) {
-        if (valsArray[i] >= maxValue) {
-            maxValue = valsArray[i];
-            maxValIndex = i;
-        }
-
-        if (valsArray[i] <= minValue) {
-            minValue = valsArray[i];
-            minValIndex = i;
-        }
-    }
-
-    cout << endl;
-    cout << "MIN VALUE: " << minValue << "     AT INDEX: " << minValIndex << endl;
-    cout << "MAX VALUE: " << maxValue << "      AT INDEX: " << maxValIndex << endl;
+//    int minValue = 0;
+//    int maxValue = 0;
+//    int minValIndex;
+//    int maxValIndex;
+//    for (int i = 0; i < n - 1; i++) {
+//        if (valsArray[i] >= maxValue) {
+//            maxValue = valsArray[i];
+//            maxValIndex = i;
+//        }
+//
+//        if (valsArray[i] <= minValue) {
+//            minValue = valsArray[i];
+//            minValIndex = i;
+//        }
+//    }
+//
+//    cout << endl;
+//    cout << "MIN VALUE: " << minValue << "     AT INDEX: " << minValIndex << endl;
+//    cout << "MAX VALUE: " << maxValue << "      AT INDEX: " << maxValIndex << endl;
 
 }
