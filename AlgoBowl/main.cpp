@@ -7,7 +7,7 @@ using namespace std;
 
 int main() {
     ifstream inputData;
-    inputData.open("AlgoBowlInputc");
+    inputData.open("AlgoBowlInput");
     int m;
     int n;
 
@@ -79,6 +79,7 @@ int main() {
 //    }
 
     //find max and min vals
+    //This part is wrong
     int minValue = 0;
     int maxValue = 0;
     int minValIndex;
